@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-color: #EED3D9;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 10vh;
+    align-items: center;
+    padding: 0 15px;
+    padding-left: 70px;
+    background-color: #FFE7E7;
+    color: #114232;
+    font-weight: bold;
+
+}
+
+nav ul {
+    z-index: 999;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    transition-duration: .5s;
+    list-style-type: none;
+    cursor: pointer;
+}
+nav ul li:hover{
+    color: #ff7777;
+}
+
+main {
+    width: 40vw;
+    height: 68vh;
+    position: absolute;
+    bottom: 5%;
+    left: 80px;
+    display: flex;
+    gap:  20px 0px;
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 1.7em;
+    font-style: bold;
+    color: white;
+}
+
+main h3 {
+    font-size: 3em;
+    font-style: bold;
+    color: #320000;
+}
+
+h3 sup {
+    font-size: .4em;
+}
+
+main p {
+    color: white;
+    margin: 10px 0;
+}
+
+main a {
+    text-decoration: none;
+    color: #114232;
+    border: 3px solid #E6A4B4;
+    padding: 10px 25px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 60px;
+    transition-duration: .5s;
+}
+
+main a:hover {
+    box-shadow: 0px 0px 10px #ff7777;
+}
+main section{
+    display: flex;
+    flex-direction: row;
+}
+main section figure img{
+    filter: drop-shadow(1px 1px 10px #ff7777);
+    transform: rotate(30deg);
+}
+main ul{
+    display: flex;
+    flex-direction: row;
+    gap: 0 10px;
+}
+main ul li{
+    list-style-type: none;
+    border: 2px solid #E6A4B4;
+    border-radius: 10px;
+    padding: 4px 10px;
+    transition-duration: .5s;
+    cursor: pointer;
+}
+main ul li:hover{
+    border: 3px solid #ff7777;
+    box-shadow: 0px 0px 10px #ff7777;
+
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 150px;
+    right: -50px;
+}
+
+aside figure img {
+    transform: rotate(30deg);
+    margin-left: -70px;
+    position: absolute;
+    right: 250px;
+    bottom: -10px;
+    filter: drop-shadow(1px 1px 200px #ff0000);
+}
